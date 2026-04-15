@@ -8,7 +8,8 @@ using an adjacency table representation.
 | File | Description |
 |------|-------------|
 | `graphe.py` | `Graphe` class — core module |
-| `test-graphe.py` | Interactive menu to test the implementation |
+| `interactive_test.py` | Interactive menu to test the implementation |
+| `Test_graph-real_case.py` | Real use case of the implementation |
 
 ## Class `Graphe` — Methods
 
