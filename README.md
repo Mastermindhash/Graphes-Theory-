@@ -21,17 +21,20 @@ using an adjacency table representation.
 ## Usage
 
 ```python
-from graphe import Graphe
+from graphe import Graphe 
 
 g = Graphe()
-g.add_edge('A', 'B', 2)
-g.add_edge('A', 'C', 4)
-g.add_edge('B', 'D', 3)
-g.add_edge('C', 'D', 1)
+g.add_edge('R', 'A', 9)                    # adding edges 
+g.add_edge('R', 'U', 12)
+g.add_edge('A', 'C', 5)
+g.add_edge('A', 'U', 7)
+g.add_edge('C', 'U', 9)
+g.add_edge('C', 'H', 8)
+g.add_edge('C', 'M', 14)
 
-distances, previous = g.dijkstra('A')
-path = g.get_path(distances, previous, 'D')
+distances, previous = g.dijkstra('R')       # getting 2 dictionaries from dijkstra 
+path = g.get_path(distances, previous, 'M') # finding the path 
+print(g.display(path))                      # displaying path 
+print(distances)                            # displaying distances between R and each vertex of g
 
-print(g.display(path))       # A -> B -> D
-print("Distance :", distances['D'])  # Distance : 5
 ```
