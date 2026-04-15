@@ -9,7 +9,7 @@ using an adjacency table representation.
 |------|-------------|
 | `graphe.py` | `Graphe` class — core module |
 | `interactive_test.py` | Interactive menu to test the implementation |
-| `test_graph-real_case.py` | Real use case of the implementation |
+| `test_graph_real_case.py` | Real use case of the implementation |
 
 ## Class `Graphe` — Methods
 
