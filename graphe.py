@@ -60,6 +60,6 @@ class Graphe(object) :
 
     def display_adjacence(self):
         """Affiche la table d'adjacence du graphe."""
-        for sommet, voisins in self.adjacence.items():
-            voisins_str = ", ".join(f"{v}(poids:{w})" for v, w in voisins)
-            print(f"{sommet} : [{voisins_str}]")
+        for vertex, nearby in self.adjacence.items():
+            nearby_str = ", ".join(f"{v}(poids:{w})" for v, w in nearby)
+            print(f"{vertex} : [{nearby_str}]")
